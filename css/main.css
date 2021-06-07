@@ -1,43 +1,1562 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    overflow: hidden;
+  }
+
+.memberContainer {
+    position: absolute;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+.hairContainer {
+    z-index: 2;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+.faceContainer {
+    z-index: -2;
 }
-a {
-    text-decoration: none;
-    color: #999;
+
+.shirtContainer {
+  z-index: 2;
 }
-a:hover {
-    text-decoration: underline;
+
+.coatContainer {
+  z-index: -2;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+
+.bowTieContainer {
+  z-index: 3;
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+
+.hairs {
+  background : #000000;
+  position: absolute;
+  z-index: 2;
 }
+
+.hair1 {
+  left : 540.5px;
+  top : 106.9306px;
+  width : 32.0553px;
+  height : 11.603px;
+  border-radius : 0px 9px 0px 0px;
+  transform: rotate(58deg);
+}
+.hair2 {
+  left : 350.6885px;
+  top : 231.2631px;
+  width : 17px;
+  height : 5px;
+  transform: rotate(-35.054deg);
+}
+.hair3 {
+  left : 357.5px;
+  top : 209.5px;
+  width : 34px;
+  height : 22px;
+}
+.hair4 {
+  left : 352.459px;
+  top : 289.593px;
+  width : 21.5093px;
+  height : 5.2391px;
+  transform: rotate(50.879deg);
+}
+.hair5 {
+  left : 370.7464px;
+  top : 297.7545px;
+  width : 9.018px;
+  height : 27px;
+  border-radius : 0px 4px 9px 0px;
+  transform: rotate(-30deg);
+}
+.hair6 {
+  left : 411.9428px;
+  top : 71.106px;
+  width : 146.5239px;
+  height : 59.0313px;
+  border-radius : 29px;
+  transform: rotate(13.919deg);
+}
+.hair7 {
+  left : 373.4009px;
+  top : 65.0069px;
+  width : 87.751px;
+  height : 70.8501px;
+  border-radius : 37px 17px 17px 17px;
+  transform: rotate(-8deg);
+}
+.hair8 {
+  left : 334.71px;
+  top : 82.0257px;
+  width : 94.6414px;
+  height : 62.1103px;
+  border-radius : 31px;
+  transform: rotate(138.57deg);
+}
+
+.hair9 {
+  left : 322px;
+  top : 117px;
+  width : 59px;
+  height : 110px;
+  border-radius : 29px;
+}
+.hair10 {
+  left : 374.5px;
+  top : 132.5px;
+  width : 70px;
+  height : 118px;
+  border-radius : 39px 31px 0px 59px;
+}
+.hair11 {
+  left : 336px;
+  top : 242.1905px;
+  width : 14px;
+  height : 22px;
+  border-radius : 0px 0px 0px 14px;
+  transform: rotate(3.859deg);
+}
+.hair12 {
+  left : 322.5px;
+  top : 198.5px;
+  width : 39.5px;
+  height : 47px;
+  border-radius : 0px 8px 22px 14px;
+}
+.hair13 {
+  left : 529.8237px;
+  top : 125.2942px;
+  width : 34.9477px;
+  height : 12.0681px;
+  border-radius : 5px;
+  transform: rotate(-25.522deg);
+}
+.hair14 {
+  left : 454.0581px;
+  top : 107.1663px;
+  width : 92.8205px;
+  height : 33.9136px;
+  border-radius : 0px 0px 24px 0px;
+  transform: rotate(13.919deg);
+}
+.hair15 {
+  left : 423px;
+  top : 114.275px;
+  width : 74.54px;
+  height : 38px;
+  border-radius : 0px 0px 0px 29px;
+  transform: rotate(-16.24deg);
+}
+.hair16 {
+  left : 424.3906px;
+  top : 149.816px;
+  width : 40.6223px;
+  height : 47.1549px;
+  border-radius : 16px;
+  transform: rotate(67.064deg);
+}
+.hair17 {
+  left : 295.7789px;
+  top : 286.4123px;
+  width : 127.1025px;
+  height : 5.341px;
+  border-radius : 3px 1px 4px 1px;
+  transform: rotate(-120deg);
+}
+
+.faces {
+    background : #F39187;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .face1 {
+  left : 375.3016px;
+  top : 276.6437px;
+  width : 15.8663px;
+  height : 63.7205px;
+  border-radius : 0px 7px 7px 7px;
+  transform: rotate(-26.257deg);
+}
+.face2 {
+  left : 572.2821px;
+  top : 280.6273px;
+  width : 22.9415px;
+  height : 42.8633px;
+  border-radius : 7px 0px 7px 7px;
+  transform: rotate(6.333deg);
+}
+.face3 {
+  left : 551px;
+  top : 297.6522px;
+  width : 40.9415px;
+  height : 66.3478px;
+  border-radius : 7px;
+}
+.face4 {
+  left : 534.4172px;
+  top : 393.9813px;
+  width : 15.8497px;
+  height : 17.4801px;
+  border-radius : 7px;
+  transform: rotate(9.943deg);
+}
+.face5 {
+  left : 542.35px;
+  top : 341.6194px;
+  width : 36.6831px;
+  height : 71.3092px;
+  border-radius : 6px 6px 6px 24px;
+  transform: rotate(-108.765deg);
+}
+.face6 {
+  left : 499px;
+  top : 392px;
+  width : 49px;
+  height : 56px;
+  border-radius : 11px 11px 3px 11px;
+  transform: rotate(57.869deg);
+}
+.face7 {
+  left : 435.8747px;
+  top : 232.4883px;
+  width : 57.4569px;
+  height : 94.0419px;
+  border-radius : 7px;
+  transform: rotate(-126.616deg);
+}
+.face8 {
+  left : 569.6263px;
+  top : 207px;
+  width : 17.1px;
+  height : 38.9725px;
+  border-radius : 7px;
+}
+.face9 {
+  left : 569.2583px;
+  top : 216.57px;
+  width : 27.8115px;
+  height : 68.8391px;
+  border-radius : 7px 7px 7px 10px;
+  transform: rotate(-30deg);
+}
+.face10 {
+  left : 573.3983px;
+  top : 174.1704px;
+  width : 22.6313px;
+  height : 33.2477px;
+  border-radius : 7px 7px 14px 7px;
+  transform: rotate(-42.859deg);
+}
+.face11 {
+  left : 473.8684px;
+  top : 119.3773px;
+  width : 35.5344px;
+  height : 75.009px;
+  border-radius : 7px;
+  transform: rotate(-115.522deg);
+}
+.face12 {
+  left : 384.8921px;
+  top : 175.0527px;
+  width : 203.2291px;
+  height : 62.7118px;
+  border-radius : 7px;
+  transform: rotate(-30deg);
+}
+.face13 {
+  left : 362.3747px;
+  top : 255.2964px;
+  width : 258.7852px;
+  height : 58.8289px;
+  border-radius : 7px;
+  transform: rotate(-51.326deg);
+}
+.face14 {
+  left : 371.4585px;
+  top : 223.6522px;
+  width : 36.683px;
+  height : 58.8289px;
+  border-radius : 19px 7px 7px 7px;
+  transform: rotate(-62.826deg);
+}
+.face15 {
+  left : 382.3377px;
+  top : 214.5623px;
+  width : 43.8238px;
+  height : 171.6262px;
+  border-radius : 35px 7px 7px 7px;
+  transform: rotate(-42.859deg);
+}
+.face16 {
+  left : 390.94px;
+  top : 248px;
+  width : 24.944px;
+  height : 162.125px;
+  border-radius : 0px 0px 0px 4px;
+  transform: rotate(-180deg);
+}
+.face17 {
+  left : 388.3138px;
+  top : 376.5596px;
+  width : 100.7885px;
+  height : 26.1559px;
+  border-radius : 7px 7px 7px 2px;
+  transform: rotate(-35.408deg);
+}
+.face18 {
+  left : 378.87px;
+  top : 322.8083px;
+  width : 254.6922px;
+  height : 50.9577px;
+  border-radius : 7px 7px 2px 4px;
+  transform: rotate(-48.916deg);
+}
+.face19 {
+  left : 477.4585px;
+  top : 423.2522px;
+  width : 36.683px;
+  height : 58.829px;
+  border-radius : 7px;
+  transform: rotate(45deg);
+}
+.face20 {
+  left : 394.29px;
+  top : 330.107px;
+  width : 252.66px;
+  height : 58.83px;
+  border-radius : 7px;
+  transform: rotate(-62.826deg);
+
+}
+
+.shirts {
+  background : rgb(241, 237, 237);
+  position: absolute;
+  z-index: 1;
+}
+
+.shirt1
+{
+  left : 411.77px;
+  top : 501.194px;
+  width : 163.816px;
+  height : 26.2445px;
+  transform: rotate(2.327deg);
+}
+.shirt2
+{
+  left : 406.45px;
+  top : 484.04px;
+  width : 169.16px;
+  height : 27.17px;
+  border-radius : 0px 3px 0px 0px;
+  transform: rotate(-2.677deg);
+}
+.shirt3
+{
+  left : 410.64px;
+  top : 526.165px;
+  width : 163.475px;
+  height : 42.826px;
+  border-radius : 0px 0px 2px 0px;
+  transform: rotate(2.327deg);
+}
+.shirt4
+{
+  left : 417.985px;
+  top : 563.57px;
+  width : 154.224px;
+  height : 31.493px;
+  border-radius : 0px 0px 2px 0px;
+  transform: rotate(4.7759deg);
+}
+.shirt5
+{
+  left : 413.36px;
+  top : 587.40px;
+  width : 153.0785px;
+  height : 84.59px;
+  border-radius : 0px 0px 3px 0px;
+  transform: rotate(7.9215deg);
+}
+.shirt6
+{
+  left : 404.442px;
+  top : 643px;
+  width : 154.558px;
+  height : 37px;
+  border-radius : 0px 0px 0px 2px;
+}
+.shirt7
+{
+  left : 395.1px;
+  top : 583.676px;
+  width : 37px;
+  height : 94.05px;
+  transform: rotate(-11.5deg);
+}
+.shirt8
+{
+  left : 381px;
+  top : 516px;
+  width : 38.636px;
+  height : 71.25px; //68,2169
+  border-radius : 5px 0px 0px 0px;
+  transform: rotate(-7.23deg);
+}
+.shirt9
+{
+  left : 376.912px;
+  top : 475px;
+  width : 1.975px;
+  height : 53px;
+  border-radius : 2px 0px 0px 2px;
+}
+.shirt10
+{
+  left : 378px;
+  top : 424.336px;
+  width : 37px;
+  height : 103.664px;
+  border-radius : 0px 24px 0px 4px;
+}
+.shirt11
+{
+  left : 379px;
+  top : 400px;
+  width : 15.207px;
+  height : 26.386px;
+  border-radius : 1px 14px 0px 0px;
+  transform: rotate(2.715deg);
+}
+.shirt12
+{
+  left : 380.347px;
+  top : 390.576px;
+  width : 10.4667px;
+  height : 24.88px;
+  border-radius : 10px 0px 0px 0px;
+  transform: rotate(-9.409deg);
+}
+.shirt13
+{
+  left : 385.06px;
+  top : 412.24px;
+  width : 16.5px;
+  height : 29.192px;
+  border-radius : 4px 0px 0px 0px;
+  transform: rotate(-36.465deg)
+}
+.shirt14
+{
+  left : 384.507px;
+  top : 374.852px;
+  width : 5.364px;
+  height : 19.91px;
+  border-radius : 4px 1px 0px 0px;
+  transform: rotate(14.639deg);
+}
+.shirt15
+{
+  left : 529.21px;
+  top : 450.25px;
+  width : 42.65px;
+  height : 43.48px;
+  border-radius : 0px 4px 7px 0px;
+  transform: rotate(-13.5deg)
+}
+.shirt16
+{
+  left : 545.6px;
+  top : 423.6px;
+  width : 21.19px;
+  height : 56.35px;
+  transform: rotate(-6.783deg);
+}
+.shirt17
+{
+  left : 550.087px;
+  top : 398.31px;
+  width : 11.32px;
+  height : 27.09px;
+  border-radius : 7px 4px 2px 0px;
+  transform: rotate(-11.514deg);
+}
+.shirt18
+{
+  left : 542.467px;
+  top : 407.766px;
+  width : 10.686px;
+  height : 38.25px;
+  transform: rotate(30deg)
+}
+.shirt19
+{
+  left : 505.06px;
+  top : 442.975px;
+  width : 61.842px;
+  height : 25.75px;
+  border-radius : 0px 1px 0px 0px;
+  transform: rotate(-48.916deg);
+}
+.shirt20
+{
+  left : 495.063px;
+  top : 462.235px;
+  width : 25.65px;
+  height : 46.08px;
+  transform: rotate(51.2deg);
+}
+.shirt21
+{
+  left : 449px;
+  top : 458.255px;
+  width : 27.984px;
+  height : 61.984px;
+  transform: rotate(-62.411deg)
+}
+.shirt22
+{
+  left : 410.6px;
+  top : 428.45px;
+  width : 37px;
+  height : 94px;
+  transform: rotate(-48.916deg);
+}
+
+.coats {
+  background : #000033;
+  position: absolute;
+  z-index: -2;
+}
+
+.coat1 {
+  left : 596.813px;
+  top : 410.65px;
+  width : 35.335px;
+  height : 11.5px;
+  border-radius : 0px 1px 0px 0px;
+  transform: rotate(20.57deg);
+}
+.coat2 {
+  left : 627.42px;
+  top : 418.7px;
+  width : 12.754px;
+  height : 6.7px;
+  border-radius : 3px 7px 0px 0px;
+  transform: rotate(35.8deg);
+}
+.coat3 {
+  left : 560.05px;
+  top : 439.457px;
+  width : 80.3px;
+  height : 62px;
+  transform: rotate(80.247deg);
+}
+.coat4 {
+  left : 559.89px;
+  top : 394.17px;
+  width : 24.13px;
+  height : 17.7px;
+  border-radius : 4px 0px 0px 0px;
+  transform: rotate(-14.734deg);
+}
+.coat5 {
+  left : 552.05px;
+  top : 397.135px;
+  width : 54.81px;
+  height : 69px;
+  border-radius : 0px 4px 0px 0px;
+  transform: rotate(45deg);
+}
+.coat6 {
+  left : 588.07px;
+  top : 429.886px;
+  width : 89px;
+  height : 140.783px;
+  transform: rotate(27.315deg);
+}
+.coat7 {
+  left : 684.523px;
+  top : 458.41px;
+  width : 41.47px;
+  height : 40.32px;
+  border-radius : 10px 0px 0px 0px;
+  transform: rotate(-68deg);
+}
+.coat8 {
+  left : 546px;
+  top : 501.2px;
+  width : 228.06px;
+  height : 50.75px;
+  border-radius : 0px 45px 6px 0px;
+  transform: rotate(-28deg);
+}
+.coat9 {
+  left : 638.5px;
+  top : 526.4px;
+  width : 151.3px;
+  height : 16.46px;
+  border-radius : 0px 13px 0px 0px;
+  transform: rotate(-28deg);
+}
+.coat10 {
+  left : 561.75px;
+  top : 546.75px;
+  width : 241px;
+  height : 48px;
+  border-radius : 0px 8px 0px 0px;
+  transform: rotate(-21.84deg);
+}
+.coat11 {
+  left : 586.81px;
+  top : 579.32px;
+  width : 230.67px;
+  height : 67px;
+  transform: rotate(-16.63deg);
+}
+.coat12 {
+  left : 819px;
+  top : 672px;
+  width : 17.4px;
+  height : 8.35px;
+  border-radius : 0px 1px 0px 0px;
+}
+.coat13 {
+  left : 797px;
+  top : 614px;
+  width : 33px;
+  height : 63px;
+  transform: rotate(-12.37deg);
+}
+.coat14 {
+  left : 559px;
+  top : 613px;
+  width : 263px;
+  height : 67px;
+}
+.coat15 {
+  left : 356.2px;
+  top : 394.46px;
+  width : 22.8px;
+  height : 37px;
+  transform: rotate(-54.35deg);
+}
+.coat16 {
+  left : 359.52px;
+  top : 370.48px;
+  width : 49.815px;
+  height : 31.55px;
+  border-radius : 9px 0px 0px 6px;
+  transform: rotate(-49.81deg);
+}
+.coat17 {
+  left : 333.286px;
+  top : 426.315px;
+  width : 45.64px;
+  height : 67px;
+  transform: rotate(2.36deg);
+}
+.coat18 {
+  left : 334.7px;
+  top : 423.95px;
+  width : 59.44px;
+  height : 17.5px;
+  transform: rotate(49.55deg);
+}
+.coat19 {
+  left : 330.59px;
+  top : 415.96px;
+  width : 27.19px;
+  height : 67px;
+  border-radius : 6px 0px 0px 0px;
+  transform: rotate(-27.67deg);
+}
+.coat20 {
+  left : 291.87px;
+  top : 429.47px;
+  width : 90px;
+  height : 164.68px;
+  border-radius : 10px 25px 0px 0px;
+  transform: rotate(-35deg);
+}
+.coat21 {
+  left : 229px;
+  top : 477.5px;
+  width : 50px;
+  height : 33px;
+  border-radius : 13px 0px 0px 0px;
+  transform: rotate(60deg);
+}
+.coat22 {
+  left : 168.25px;
+  top : 523px;
+  width : 247.44px;
+  height : 68.1px;
+  border-radius : 52px 0px 0px 7px;
+  transform: rotate(33.78deg);
+}
+.coat23 {
+  left : 142.61px;
+  top : 562.32px;
+  width : 254.12px;
+  height : 42.8px;
+  border-radius : 18px 0px 0px 0px;
+  transform: rotate(23.6deg);
+}
+.coat24 {
+  left : 133.2px;
+  top : 581.94px;
+  width : 192.4px;
+  height : 27.92px;
+  border-radius : 5px 0px 0px 0px;
+  transform: rotate(19deg);
+}
+.coat25 {
+  left : 167.15px;
+  top : 550.93px;
+  width : 51.38px;
+  height : 138.48px;
+  transform: rotate(-72.93deg);
+}
+.coat26 {
+  left : 103px;
+  top : 677px;
+  width : 21px;
+  height : 4px;
+  border-radius : 0px;
+}
+.coat27 {
+  left : 115px;
+  top : 659px;
+  width : 13px;
+  height : 21px;
+}
+.coat28 {
+  left : 110.95px;
+  top : 621.3px;
+  width : 15.25px;
+  height : 59.8px;
+  border-radius : 0px 0px 7px 1px;
+  transform: rotate(16.22deg);
+}
+.coat29 {
+  left : 123px;
+  top : 614px;
+  width : 292px;
+  height : 67px;
+}
+
+.cContours {
+  background: #000000;
+  position: absolute;
+  z-index: 3;
+}
+
+.coatContour1 {
+  left : 247.5px;
+  top : 608.32px;
+  width : 118.45px;
+  height : 42.91px;
+  transform: rotate(-32deg);
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-radius: 10px 0px 0px 0px;
+}
+.coatContour2 {
+  left : 312.9px;
+  top : 532.38px;
+  width : 1.5px;
+  height : 69px;
+  transform: rotate(-68.86deg);
+}
+.coatContour3 {
+  left : 252.7px;
+  top : 508.5px;
+  width : 1.5px;
+  height : 63px;
+  transform: rotate(-62.63deg);
+}
+.coatContour4 {
+  left : 225.5px;
+  top : 515.5px;
+  width : 1.5px;
+  height : 10.7px;
+  transform: rotate(-1deg);
+}
+.coatContour5 {
+  left : 240.67px;
+  top : 466.83px;
+  width : 1.5px;
+  height : 53.06px;
+  transform: rotate(34deg);
+}
+.coatContour6 {
+  left : 703.27px;
+  top : 635px;
+  width : 1.5px;
+  height : 45px;
+  transform: rotate(13.67deg);
+}
+.coatContour7 {
+  left : 685px;
+  top : 598.9px;
+  width : 1.5px;
+  height : 52px;
+  transform: rotate(-66.5deg);
+}
+.coatContour8 {
+  left : 631.95px;
+  top : 563.4px;
+  width : 1.5px;
+  height : 68.5px;
+  transform: rotate(-60deg);
+}
+.coatContour9 {
+  left : 654.53px;
+  top : 501.5px;
+  width : 1.5px;
+  height : 113.9px;
+  transform: rotate(66.35deg);
+}
+.coatContour10 {
+  left : 716.3px;
+  top : 507.2px;
+  width : 1.5px;
+  height : 32.2px;
+  transform: rotate(34deg);
+}
+.coatContour11 {
+  left : 706px;
+  top : 448.22px;
+  width : 1.5px;
+  height : 69.2px;
+  transform: rotate(-34.5deg);
+}
+
+.bowTies {
+  background: #000033;
+  position: absolute;
+  z-index: 3;
+}
+
+.bowTie1 {
+  left : 420.4px;
+  top : 480.5px;
+  width : 22.15px;
+  height : 16.25px;
+  border-radius : 4px 5px 0px 0px;
+  transform: rotate(-39.9deg);
+}
+.bowTie2 {
+  left : 409.25px;
+  top : 491.15px;
+  width : 22.15px;
+  height : 16.25px;
+  border-radius : 4px 0px 0px 6px;
+  transform: rotate(-48.9deg);
+}
+.bowTie3 {
+  left : 407.5px;
+  top : 494.5px;
+  width : 17.4px;
+  height : 26.7px;
+  border-radius : 12px 0px 0px 5px;
+  transform: rotate(0deg);
+}
+.bowTie4 {
+  left : 409.5px;
+  top : 518px;
+  width : 19.25px;
+  height : 19.57px;
+  border-radius : 0px 0px 2px 4px;
+  transform: rotate(-8.34deg);
+}
+.bowTie5 {
+  left : 421.58px;
+  top : 500px;
+  width : 38.56px;
+  height : 29.3px;
+  border-radius : 0px 0px 3px 0px;
+  transform: rotate(-23deg);
+}
+.bowTie6 {
+  left : 451.95px;
+  top : 496.68px;
+  width : 27.94px;
+  height : 21.4px;
+  border-radius : 0px 8px 0px 0px;
+  transform: rotate(-27deg);
+}
+.bowTie7 {
+  left : 427.2px;
+  top : 484.37px;
+  width : 38.57px;
+  height : 31.1px;
+  transform: rotate(25.26deg);
+}
+.bowTie8 {
+  left : 474.95px;
+  top : 486.75px;
+  width : 29px;
+  height : 21.3px;
+  border-radius : 15px 0px 0px 0px;
+  transform: rotate(27.17deg);
+}
+.bowTie9 {
+  left : 475.5px;
+  top : 494.5px;
+  width : 25.6px;
+  height : 20.5px;
+}
+.bowTie10 {
+  left : 496.1px;
+  top : 504.33px;
+  width : 25px;
+  height : 11.33px;
+  transform: rotate(4deg);
+}
+.bowTie11 {
+  left : 487.4px;
+  top : 488.95px;
+  width : 42px;
+  height : 20.63px;
+  transform: rotate(-13.49deg);
+}
+.bowTie12 {
+  left : 549px;
+  top : 499.15px;
+  width : 13px;
+  height : 21.95px;
+  border-radius : 0px 3px 6px 0px;
+  transform: rotate(30deg);
+}
+.bowTie13 {
+  left : 508.94px;
+  top : 497.85px;
+  width : 50px;
+  height : 22.25px;
+  border-radius : 0px 0px 3px 11px;
+  transform: rotate(4deg);
+}
+.bowTie14 {
+  left : 526px;
+  top : 479.2px;
+  width : 37.47px;
+  height : 30.3px;
+  border-radius : 0px 6px 2px 0px;
+  transform: rotate(-13.5deg);
+}
+
+.sContours {
+  background: #000000;
+  position: absolute;
+  z-index: 4;
+}
+
+.shirtContour1 {
+  left : 480px;
+  top : 663px;
+  width : 12px;
+  height : 12px;
+  border-radius : 6px;
+}
+.shirtContour2 {
+  left : 478px;
+  top : 580px;
+  width : 12px;
+  height : 12px;
+  border-radius : 6px;
+}
+.shirtContour3 {
+  z-index: 2;
+  left : 482px;
+  top : 495px;
+  width : 12px;
+  height : 12px;
+  border-radius : 6px;
+}
+.shirtContour4 {
+  background-color: #ffffff;
+  z-index: 1;
+  left : 469px;
+  top : 485px;
+  width : 36px;
+  height : 196px;
+  border-radius : 18px 18px 0px 0px;
+}
+.shirtContour5 {
+  z-index: 2;
+  left : 457.75px;
+  top : 471px;
+  width : 1.5px;
+  height : 77.35px;
+  border-radius : 0px 0px 0px 1px;
+  transform: rotate(48.5deg);
+}
+.shirtContour6 {
+  z-index: 2;
+  left : 414.5px;
+  top : 492.57px;
+  width : 1.5px;
+  height : 47.7px;
+  border-radius : 0px 0px 0px 1px;
+  transform: rotate(-38.5deg);
+}
+.shirtContour7 {
+  z-index: 2;
+  left : 534px;
+  top : 481.2px;
+  width : 1.5px;
+  height : 47.1px;
+  border-radius : 0px 0px 0px 1px;
+  transform: rotate(47.63deg);
+}
+.shirtContour8 {
+  z-index: 2;
+  left : 502.35px;
+  top : 478.22px;
+  width : 1.5px;
+  height : 47.1px;
+  border-radius : 0px 0px 0px 1px;
+  transform: rotate(-38.5deg);
+}
+.shirtContour9 {
+  background-color: transparent;
+  z-index: 2;
+  left : 336px;
+  top : 400px;
+  width : 158px;
+  height : 73px;
+  border: solid 2px #000;
+  border-radius: 49%/54px 35px 0 0;
+  transform: rotate(-95deg);
+  border-color: #000 transparent transparent transparent;
+}
+.shirtContour10 {
+  background-color: transparent;
+  z-index: 2;
+  left : 358px;
+  top : 378px;
+  width : 174px;
+  height : 73px;
+  border: solid 2px #000;
+  border-radius: 50%/30px 74px 0 0;
+  transform: rotate(-140deg);
+  border-color: #000 transparent transparent transparent;
+}
+.shirtContour11 {
+  background-color: transparent;
+  z-index: 2;
+  left : 442px;
+  top : 375px;
+  width : 119px;
+  height : 73px;
+  border: solid 2px #000;
+  border-radius: 46px 50%/30px 0 0;
+  transform: rotate(-226deg);
+  border-color: #000 transparent transparent transparent;
+}
+.shirtContour12 {
+  background-color: transparent;
+  z-index: 2;
+  left : 469px;
+  top : 416px;
+  width : 105px;
+  height : 73px;
+  border: solid 2px #000;
+  border-radius: 50%/1px 46px 0 0;
+  transform: rotate(-273deg);
+  border-color: #000 transparent transparent transparent;
+}
+
+.fContours {
+  background : #000000;
+  position: absolute;
+  z-index: 0;
+}
+
+.faceContour1 {
+  background-color: transparent;
+  z-index: 2;
+  left : 404px;
+  top : 279px;
+  width : 107px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 50%/1px 46px 0 0;
+  transform: rotate(-150deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour2 {
+  background-color: transparent;
+  z-index: 2;
+  left : 497px;
+  top : 319px;
+  width : 72px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 46px 50%/30px 0 0;
+  transform: rotate(-154.5deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour3, .ear1, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 394px;
+  top : 246px;
+  width : 44px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 46px 50%/30px 0 0;
+  transform: rotate(-146deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour4, .ear2, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 375px;
+  top : 258px;
+  width : 11px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 11px 38%/47px 0 0;
+  transform: rotate(-246deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour5, .ear3, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 403px;
+  top : 227px;
+  width : 11px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 11px 38%/47px 0 0;
+  transform: rotate(-179deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour6, .ear4, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 424px;
+  top : 246px;
+  width : 19px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 38px 38%/53px 0 0;
+  transform: rotate(-87deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour7, .ear5, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 399px;
+  top : 244px;
+  width : 32px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 49px 60px 0 0;
+  transform: rotate(-66deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour8, .ear6, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 418px;
+  top : 236px;
+  width : 15px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 11px 38%/47px 0 0;
+  transform: rotate(-79deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour9, .ear7, .ears {
+  z-index: 2;
+  left : 392px;
+  top : 269px;
+  width : .5px;
+  height : 7px;
+  transform: rotate(-133deg);
+}
+.faceContour10, .ear8, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 347px;
+  top : 231px;
+  width : 27px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 38px 38%/53px 0 0;
+  transform: rotate(31deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour11, .ear9, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 391px;
+  top : 225px;
+  width : 24px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 57px 51%/30px 0 0;
+  transform: rotate(-95deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour12, .ear10, .ears {
+  background-color: transparent;
+  z-index: 2;
+  left : 387px;
+  top : 228px;
+  width : 24px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 90px 51%/21px 0 0;
+  transform: rotate(-122deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour13 {
+  background-color: transparent;
+  z-index: 2;
+  left : 498px;
+  top : 368px;
+  width : 29px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 27px 38%/44px 0 0;
+  transform: rotate(-173deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour14 {
+  background-color: transparent;
+  z-index: 2;
+  left : 554px;
+  top : 360px;
+  width : 37px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 51px 38%/44px 0 0;
+  transform: rotate(-9deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour15 {
+  background-color: transparent;
+  z-index: 2;
+  left : 545px;
+  top : 288px;
+  width : 37px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 51px 38%/44px 0 0;
+  transform: rotate(-49deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour16 {
+  background-color: transparent;
+  z-index: 2;
+  left : 556px;
+  top : 276px;
+  width : 29px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 51px 38%/44px 0 0;
+  transform: rotate(14deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour17, .eyeBrow1 {
+  z-index: 2;
+  left : 525.8px;
+  top : 207.7px;
+  width : 27.25px;
+  height : 5.3px;
+  border-radius : 2px 4px 0px 0px;
+  transform: rotate(2.27deg);
+}
+.faceContour18, .eyeBrow2 {
+  z-index: 2;
+  left : 532.9px;
+  top : 210.65px;
+  width : 21px;
+  height : 4px;
+  border-radius : 2px 3px 0px 0px;
+  transform: rotate(-5.93deg);
+}
+.faceContour19, .eyeBrow4 {
+  z-index: 2;
+  left : 514.25px;
+  top : 210.9px;
+  width : 15.25px;
+  height : 5.3px;
+  border-radius : 2px 1px 0px 3px;
+  transform: rotate(-33deg);
+}
+.faceContour20, .eyeBrow5 {
+  z-index: 2;
+  left : 518.7px;
+  top : 212px;
+  width : 15.25px;
+  height : 5.1px;
+  border-radius : 2px 1px 0px 0px;
+  transform: rotate(-10.25deg);
+}
+.faceContour21, .eyeBrow6 {
+  z-index: 2;
+  left : 505.85px;
+  top : 217px;
+  width : 14px;
+  height : 3.3px;
+  border-radius : 2px 0px 0px 0px;
+  transform: rotate(-17.2deg);
+}
+.faceContour22, .eyeBrow7 {
+  z-index: 2;
+  left : 500px;
+  top : 215px;
+  width : 1.5px;
+  height : 14px;
+  border-radius : 0px 1px;
+  transform: rotate(-95.93deg);
+}
+.faceContour23, .eyeBrow8 {
+  z-index: 2;
+  left : 500px;
+  top : 213.6px;
+  width : 1.5px;
+  height : 15.2px;
+  border-radius : 0px 1px;
+  transform: rotate(-104.2deg);
+}
+.faceContour24, .eyeBrow9 {
+  z-index: 2;
+  left : 505.5px;
+  top : 218.5px;
+  width : 1.5px;
+  height : 6px;
+  transform: rotate(-104.2deg);
+}
+.faceContour25, .eyeBrow10 {
+  z-index: 2;
+  left : 581px;
+  top : 200px;
+  width : 18px;
+  height : 6px;
+  border-radius : 0px 1px 5px 6px;
+  transform: rotate(-40.9deg);
+}
+.faceContour26, .eyeBrow11 {
+  z-index: 2;
+  left : 576.7px;
+  top : 208.5px;
+  width : 9.5px;
+  height : 2px;
+  border-radius : 0px 0px 0px 2px;
+  transform: rotate(-20deg);
+}
+.faceContour27, .eyeBrow12 {
+  z-index: 2;
+  left : 575.5px;
+  top : 208.2px;
+  width : 8px;
+  height : 2px;
+  border-radius : 0px 0px 0px 2px;
+  transform: rotate(-33deg);
+}
+.faceContour28, .eyeBrow13 {
+  z-index: 2;
+  left : 582.5px;
+  top : 214.2px;
+  width : 9px;
+  height : 3px;
+  border-radius : 1px 2px 0px 1px;
+  transform: rotate(5.5deg);
+}
+.faceContour29 {
+  background-color: transparent;
+  z-index: 2;
+  left : 500px;
+  top : 226px;
+  width : 48px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 51px 38%/44px 0 0;
+  transform: rotate(-7deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour30 {
+  background-color: transparent;
+  z-index: 2;
+  left : 522px;
+  top : 173px;
+  width : 31px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 51px 38%/44px 0 0;
+  transform: rotate(174deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour31, .eye1 {
+  z-index: 2;
+  left : 530px;
+  top : 226px;
+  width: 11px;
+  height: 9px;
+  transform: rotate(-15deg);
+  border-radius: 100px / 50px;
+}
+.faceContour32, .eye2 {
+  z-index: 2;
+  left : 581px;
+  top : 218px;
+  width: 4.5px;
+  height: 8px;
+  border-radius : 1px 4px 4px 2px;
+}
+.faceContour33, .mouth1 {
+  background-color: #9A444A;
+  z-index: 2;
+  left : 542px;
+  top : 311px;
+  width: 48px;
+  height: 19px;
+  transform: rotate(-4deg);
+  border-radius: 96px / 63px;
+}
+.faceContour34, .teeth1 {
+  background-color: #ffffff;
+  z-index: 3;
+  left : 545.4px;
+  top : 316px;
+  width : 8.6px;
+  height : 10px;
+  border-radius : 4px 4px 2px 2px;
+}
+.faceContour35, .teeth2 {
+  background-color: #ffffff;
+  z-index: 3;
+  left : 553px;
+  top : 315px;
+  width : 9px;
+  height : 12px;
+  border-radius : 4px 4px 2px 2px;
+}
+.faceContour36, .teeth3 {
+  background-color: #ffffff;
+  z-index: 3;
+  left : 561.5px;
+  top : 313.81px;
+  width : 10px;
+  height : 12.8px;
+  transform: rotate(-4.9deg);
+  border-radius : 4px 4px 2px 2px;
+}
+.faceContour37, .teeth4 {
+  background-color: #ffffff;
+  z-index: 3;
+  left : 570.67px;
+  top : 311.75px;
+  width : 9.25px;
+  height : 14.1px;
+  transform: rotate(-4.8deg);
+  border-radius : 5px 4px 2px 2px;
+}
+.faceContour38, .teeth5 {
+  background-color: #ffffff;
+  z-index: 3;
+  left : 578.93px;
+  top : 310.25px;
+  width : 8.6px;
+  height : 14.76px;
+  transform: rotate(-8.25deg);
+  border-radius : 3px 3px 4px 2px;
+}
+.faceContour39, .teeth6 {
+  background-color: #ffffff;
+  z-index: 3;
+  left : 585.67px;
+  top : 309.67px;
+  width : 3.2px;
+  height : 11.28px;
+  transform: rotate(-2.4deg);
+  border-radius : 1px 1px 2px 0px;
+}
+.faceContour40, .mouth2 {
+  background-color: #9A444A;
+  z-index: 4;
+  left : 543.39px;
+  top : 313px;
+  width : 21.15px;
+  height : 3.25px;
+  transform: rotate(-12.65deg);
+  border-radius : 2px 1px 0px 0px;
+}
+.faceContour41, .mouth3 {
+  background-color: #9A444A;
+  z-index: 4;
+  left : 563.7px;
+  top : 309px;
+  width : 16px;
+  height : 3.6px;
+  transform: rotate(-12.65deg);
+  border-radius : 0px 2px 0px 0px;
+}
+.faceContour42, .mouth4 {
+  background-color: #9A444A;
+  z-index: 4;
+  left : 577px;
+  top : 307.35px;
+  width : 8.15px;
+  height : 3.75px;
+  transform: rotate(-4.8deg);
+  border-radius : 0px 1px 0px 0px;
+}
+.faceContour43, .mouth5 {
+  background-color: #9A444A;
+  z-index: 4;
+  left : 583.5px;
+  top : 306px;
+  width : 7.25px;
+  height : 4px;
+  transform: rotate(-17.2deg);
+  border-radius : 0px 3px 0px 0px;
+}
+.faceContour44, .mouth6 {
+  background-color: #9A444A;
+  z-index: 2;
+  left : 557px;
+  top : 318px;
+  width: 28px;
+  height: 15px;
+  transform: rotate(0deg);
+  border-radius: 136px / 63px;
+}
+.faceContour45 {
+  background-color: transparent;
+  z-index: 2;
+  left : 566px;
+  top : 213px;
+  width : 18px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 11px 38%/47px 0 0;
+  transform: rotate(-164deg);
+  border-color: #000 transparent transparent transparent;
+}
+.faceContour46 {
+  background-color: transparent;
+  z-index: 2;
+  left : 540px;
+  top : 267px;
+  width : 18px;
+  height : 73px;
+  border: solid 1px #000;
+  border-radius: 11px 38%/47px 0 0;
+  transform: rotate(14deg);
+  border-color: #000 transparent transparent transparent;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
 }
