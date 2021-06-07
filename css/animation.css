@@ -1,0 +1,114 @@
+.faceContainer {
+    animation: 1.8s ease-in-out 3s 1 spawn backwards;
+  }
+
+  .hairContainer {
+    animation: 2.2s ease-in-out 0.7s 1 moveUp backwards,
+               2.8s ease-in-out 0.6s 1 spawn backwards;
+  }
+
+  .hairContainer {
+    animation: 2.2s ease-in-out 0.7s 1 face backwards,
+               2.8s ease-in-out 0.6s 1 spawn backwards;
+  }
+
+  .bowTieContainer {
+    animation: 1.8s ease-in-out 5s 1 moveLeft backwards;
+  }
+  
+  .shirtContainer {
+    animation: 1.8s ease-in-out 5s 1 moveUp backwards;
+  }
+
+  .coatContainer {
+    animation: 1.8s ease-in-out 3s 1 spawn backwards;
+  }
+
+  .coatContourContainer {
+    animation: 1.8s ease-in-out 3s 1 spawn backwards;
+  }
+  
+  @keyframes rotateHead {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+
+    20% {
+      transform: translateX(-50%) translateY(-50%) rotate(20deg);
+    }
+
+    80% {
+      transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    }
+}
+@keyframes backgroundAnimation {
+    0% {
+      background-color: white;
+    }
+    50% {
+      background-color: white;
+    }
+  }
+  
+  @keyframes spawn {
+    0% {
+      border-radius: 0px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      /*border: white solid 10px;*/
+    }
+  
+    80% {
+      border-radius: 0px;
+    }
+  
+    100% {
+      /*border: white solid 0px;*/
+    }
+  }
+  
+  @keyframes face {
+    0% {
+      transform: scale(0.4) rotate(800deg);
+    }
+  
+    /*80% {
+      transform: scale(1.05) rotate(-4deg);
+    }*/
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: rotate(-90deg);
+      margin-left: 1000px;
+    }
+    80% {
+      margin-left: -40px;
+      transform: scale(1.1) rotate(-10deg);
+    }
+  }
+  
+  @keyframes moveUp {
+    0% {
+      transform: rotate(-9000deg);
+      margin-top: 1000px;
+    }
+  
+    90% {
+      transform: rotate(90deg);
+      margin-top: -20px;
+    }
+  }
+  
+  
+  @keyframes moveRight {
+    0% {
+      transform: rotate(-90deg);
+      margin-left: -1000px;
+    }
+    80% {
+      margin-left: 40px;
+      transform: scale(1.1) rotate(10deg);
+    }
+  }
