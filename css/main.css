@@ -4,6 +4,8 @@ body {
 
 .memberContainer {
     position: absolute;
+    transform: scale(1);
+    margin-left: 25%
 }
 
 .hairContainer {

@@ -1,33 +1,44 @@
 .faceContainer {
-    animation: 1.8s ease-in-out 3s 1 spawn backwards;
+    animation: 1.8s ease-in-out 3s 1 rotateHead backwards;
   }
 
-  .hairContainer {
-    animation: 2.2s ease-in-out 0.7s 1 moveUp backwards,
+  .faceContourContainer {
+    animation: 2.8s ease-in-out 3s 1 moveRight backwards,
                2.8s ease-in-out 0.6s 1 spawn backwards;
   }
 
   .hairContainer {
-    animation: 2.2s ease-in-out 0.7s 1 face backwards,
+    animation: 2.2s ease-in-out 0.7s 1 moveDown backwards,
                2.8s ease-in-out 0.6s 1 spawn backwards;
   }
 
-  .bowTieContainer {
+  .shirtContainer {
     animation: 1.8s ease-in-out 5s 1 moveLeft backwards;
   }
-  
-  .shirtContainer {
-    animation: 1.8s ease-in-out 5s 1 moveUp backwards;
+
+  .shirtContourContainer {
+    animation: 1.8s ease-in-out 5s 1 moveRight backwards;
   }
 
   .coatContainer {
-    animation: 1.8s ease-in-out 3s 1 spawn backwards;
+    animation: 5.8s ease-in-out 3s 1 spawn backwards;
   }
 
   .coatContourContainer {
-    animation: 1.8s ease-in-out 3s 1 spawn backwards;
+    animation: 7.8s ease-in-out 3s 1 spawn backwards;
+  }
+
+  .bowTieContainer {
+    animation: 9.8s ease-in-out 5s 1 moveLeft backwards;
   }
   
+  
+
+  div {
+    transition: 0.2s ease-in-out;
+    border-color: white;
+  }
+
   @keyframes rotateHead {
     0% {
       transform: translateX(-50%) translateY(-50%) rotate(0deg);
@@ -81,7 +92,7 @@
   @keyframes moveLeft {
     0% {
       transform: rotate(-90deg);
-      margin-left: 1000px;
+      margin-left: 2000px;
     }
     80% {
       margin-left: -40px;
@@ -112,3 +123,58 @@
       transform: scale(1.1) rotate(10deg);
     }
   }
+
+  @keyframes moveDown {
+    0% {
+      top: -1000px;
+    }
+    80% {
+      top: 40px;
+    }
+  }
+
+  .pulsar {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 1100px;
+    height: 1100px;
+    background-color: rgb(77, 145, 223);
+    opacity: 0;
+    border-radius: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: 1.8s ease-in-out 8.5s infinite puls backwards;
+  }
+
+  @keyframes puls {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+  
+    20% {
+      opacity: .5;
+    }
+  
+    80% {
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes rotateHead {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+
+    20% {
+      transform: translateX(-50%) translateY(-50%) rotate(20deg);
+    }
+
+    80% {
+      transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    }
+}
